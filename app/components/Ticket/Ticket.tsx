@@ -12,7 +12,6 @@ const Ticket = ({ ticket }: any) => {
     if (!qrRef.current) return;
     QRCode.toCanvas(qrRef.current, ticket._id, {
       width: 180,
-      height: 180,
     });
   }, [qrRef.current, ticket]);
 
