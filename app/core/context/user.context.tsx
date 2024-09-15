@@ -93,8 +93,6 @@ export const UserProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     if (ticketsStatus === 'success') {
-      console.log(ticketsResults.data);
-      
       setTickets(
         ticketsResults.data.tickets.sort(
           (a: any, b: any) => new Date(b.screening.date).valueOf() - new Date(a.screening.date).valueOf()
