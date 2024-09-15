@@ -15,7 +15,7 @@ const MovieList = ({ movies }: IProps) => {
   return (
     <div className="movie-list">
       <ul className="movie-list__list">
-        {movies.map((movie) => (
+        {movies?.map((movie) => (
           <Link
             className="movie-list__item"
             href={`/movies/${movie.slug}`}

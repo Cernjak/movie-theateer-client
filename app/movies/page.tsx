@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import MovieList from '../components/MovieList/MovieList';
 import { Suspense } from 'react';
 
