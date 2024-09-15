@@ -1,0 +1,72 @@
+.seats__container {
+  display: flex;
+  gap: 20px;
+}
+
+.seats__seats {
+  padding: 10px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.seats__seats::before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 5px;
+  background-color: var(--black);
+  margin: -10px auto 20px;
+  border-radius: 0 0 4px 4px;
+}
+
+.seats__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 5px;
+  gap: 6px;
+}
+
+.seats__seat {
+  flex: 0 0 20px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 10px;
+  border: 0;
+  color: var(--white);
+  font-size: 1.4rem;
+  transition: var(--transition);
+}
+
+.seats__container .seats__seats .seats__seat.available:hover {
+  transform: translateY(-2px);
+}
+
+.seats__seat.my {
+  background-color: var(--blue);
+}
+
+.seats__seat.available {
+  background-color: gray;
+}
+
+.seats__seat.not-available {
+  background-color: var(--red);
+  cursor: not-allowed
+}
+
+.seats__seat.selected {
+  background-color: var(--green);
+}
+
+.seats__buy {
+  margin-top: 10px;
+}
+
+.seats__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

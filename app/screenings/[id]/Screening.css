@@ -1,0 +1,22 @@
+.screening-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.screening__img {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.screening__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}

@@ -1,0 +1,22 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background: var(--white);
+  border: 2px solid rgb(158, 158, 158);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.btn:not(:disabled):hover,
+.btn:not(:disabled):focus-visible {
+  box-shadow: var(--shadow);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}

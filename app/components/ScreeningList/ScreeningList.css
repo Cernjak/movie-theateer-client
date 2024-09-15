@@ -1,0 +1,15 @@
+.screening-list__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.screening-list__day {
+  margin-top: 14px;
+}
+
+.screening-list__day-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}

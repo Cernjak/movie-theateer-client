@@ -1,0 +1,24 @@
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+.h1 {
+  font-size: 3.6rem;
+}
+
+.h2 {
+  font-size: 3.2rem;
+}
+
+.h3 {
+  font-size: 2.8rem;
+}
+
+.h4 {
+  font-size: 2rem;
+}

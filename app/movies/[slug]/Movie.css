@@ -1,0 +1,27 @@
+.movie__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.movie__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.movie__backdrop {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.movie__img {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
