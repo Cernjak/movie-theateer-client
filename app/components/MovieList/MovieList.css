@@ -8,9 +8,13 @@
 .movie-list__item {
   flex: 0 0 calc((100% - (20px * 4)) * 0.2);
   min-width: 200px;
-  padding: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+}
+
+.movie-list__item a {
+  display: block;
+  padding: 10px;
 }
 
 .movie-list__img-container {
