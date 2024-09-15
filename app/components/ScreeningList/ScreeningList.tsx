@@ -8,7 +8,7 @@ interface IProps {
 
 const ScreeningList = async ({ movie }: IProps) => {
   const data = await fetch(
-    `${process.env.API_URL}/api/v1/movies/${movie}/screenings`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/v1/movies/${movie}/screenings`
   )
     .then((res) => res.json())
     .catch((err) => console.log(err.message));

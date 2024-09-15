@@ -4,7 +4,7 @@ import MovieList from '../components/MovieList/MovieList';
 import { Suspense } from 'react';
 
 const Movies = async () => {
-  const data = await fetch(`${process.env.API_URL}/api/v1/movies`)
+  const data = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/movies`)
     .then((res) => res.json())
     .catch((err) => console.log(err.message));
 

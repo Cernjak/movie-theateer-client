@@ -12,7 +12,7 @@ interface IProps {
 
 const Movie = async ({ params }: IProps) => {
   const data = await fetch(
-    `${process.env.API_URL}/api/v1/movies/${params.slug}`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/v1/movies/${params.slug}`
   )
     .then((res) => res.json())
     .catch((err) => console.log(err.message));

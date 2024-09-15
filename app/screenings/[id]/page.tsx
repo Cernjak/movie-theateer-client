@@ -14,7 +14,7 @@ interface IProps {
 
 const Screening = async ({ params }: IProps) => {
   const data = await fetch(
-    `${process.env.API_URL}/api/v1/screenings/${params.id}`,
+    `${process.env.NEXT_PUBLIC_API_URL}/api/v1/screenings/${params.id}`,
     {
       cache: 'no-cache',
     }
